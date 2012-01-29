@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<root>
+    <devicevendordef>
+        <vendorname>TOPRE</vendorname>
+        <vendorid>0x0853</vendorid>
+    </devicevendordef>
+
+    <deviceproductdef>
+        <productname>HHKB_PRO2</productname>
+        <productid>0x0100</productid>
+    </deviceproductdef>
+    
+    
+    <item>
+        <name>Private Config</name>
+        <list>
+            
+            <item>
+                <name>For HHKb Pro 2</name>
+                <list>
+                    <item>
+                        <name>General</name>
+                        <list>
+                            <item>
+                                <name>VI Arrow Keys</name>
+                                <identifier>private.topre_hhkb_pro2_vi_arrow_keys</identifier>
+                                <device_only>DeviceVendor::TOPRE, DeviceProduct::HHKB_PRO2</device_only>
+                                <autogen>--KeyToKey-- KeyCode::KEYPAD_MULTIPLY, KeyCode::CURSOR_LEFT</autogen>
+                                <autogen>--KeyToKey-- KeyCode::KEYPAD_SLASH, KeyCode::CURSOR_DOWN</autogen>
+                                <autogen>--KeyToKey-- KeyCode::HOME, KeyCode::CURSOR_UP</autogen>
+                                <autogen>--KeyToKey-- KeyCode::PAGEUP, KeyCode::CURSOR_RIGHT</autogen>
+                            </item>
+                            <item>
+                                <name>Rearrange Combos</name>
+                                <appendix>Used when VI Arrow Keys are enabled</appendix>
+                                <appendix>Rearrange +-*/ HOME/END/PgUp/PgDn</appendix>
+                                <identifier>private.topre_hhkb_pro2_rearrange_combos</identifier>
+                                <device_only>DeviceVendor::TOPRE, DeviceProduct::HHKB_PRO2</device_only>
+                                <autogen>--KeyToKey-- KeyCode::END, KeyCode::KEYPAD_MULTIPLY</autogen>
+                                <autogen>--KeyToKey-- KeyCode::PAGEDOWN, KeyCode::KEYPAD_SLASH</autogen>
+                                <autogen>--KeyToKey-- KeyCode::CURSOR_UP, KeyCode::HOME</autogen>
+                                <autogen>--KeyToKey-- KeyCode::CURSOR_DOWN, KeyCode::END</autogen>
+                                <autogen>--KeyToKey-- KeyCode::CURSOR_LEFT, KeyCode::PAGEUP</autogen>
+                                <autogen>--KeyToKey-- KeyCode::CURSOR_RIGHT, KeyCode::PAGEDOWN</autogen>
+                            </item>
+                        </list>
+                    </item>
+                    <item>
+                        <name>GUI Mode</name>
+                        <list>
+                            <item>
+                                <name>Control to Command</name>
+                                <identifier>private.topre_hhkb_pro2_control_to_command</identifier>
+                                <not>TERMINAL</not>
+                                <device_only>DeviceVendor::TOPRE, DeviceProduct::HHKB_PRO2</device_only>
+                                <autogen>--KeyToKey-- KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+                            </item>
+                            <item>
+                                <name>Right Command to Control</name>
+                                <identifier>private.topre_hhkb_pro2_right_command_to_control</identifier>
+                                <not>TERMINAL</not>
+                                <device_only>DeviceVendor::TOPRE, DeviceProduct::HHKB_PRO2</device_only>
+                                <autogen>--KeyToKey-- KeyCode::COMMAND_R, KeyCode::CONTROL_L</autogen>
+                            </item>
+                        </list>
+                    </item>
+                </list>
+            </item>
+        </list>
+    </item>
+</root>
