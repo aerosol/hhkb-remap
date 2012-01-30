@@ -25,4 +25,4 @@ HHKB DIP switch set to 01X10X
 
 [1]: http://pqrs.org/macosx/keyremap4macbook/ "KeyRemap4MacBook"
 [2]: http://en.wikipedia.org/wiki/Happy_Hacking_Keyboard "HHKB"
-[3]: /azhuang/hhkb-remap/raw/dev/hhkb-remap.png "Remap details"
+[3]: /azhuang/hhkb-remap/raw/master/hhkb-remap.png "Remap details"
